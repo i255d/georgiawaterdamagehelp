@@ -1,0 +1,93 @@
+---
+import Base from "../layouts/Base.astro";
+import LeadForm from "../components/LeadForm.astro";
+import CallLink from "../components/CallLink.astro";
+import JobSteps from "../components/JobSteps.astro";
+import WaterKinds from "../components/WaterKinds.astro";
+import InsuranceNotes from "../components/InsuranceNotes.astro";
+import FaqList from "../components/FaqList.astro";
+import { cities } from "../data/cities";
+
+const featured = cities.filter((city) =>
+  ["dacula", "lawrenceville", "gwinnett-county", "snellville", "buford", "atlanta"].includes(city.slug),
+);
+---
+
+<Base
+  title="Georgia Water Damage Help"
+  description="Water damage restoration help for Gwinnett and nearby Georgia cities. Send what happened. A local restoration company can follow up."
+>
+  <section class="hero wrap">
+    <p class="muted">Gwinnett first · Georgia homeowners</p>
+    <h1>Water in the house. Get a local crew on it.</h1>
+    <p class="lede">
+      Burst pipe, leak, or storm water in Dacula, Lawrenceville, or nearby.
+      Call or tell us the ZIP and what happened. A restoration company that
+      covers your city will take it from there.
+    </p>
+    <div class="actions">
+      <a class="btn" href="#request">Request help</a>
+      <CallLink class="btn secondary" />
+      <a class="btn secondary" href="/what-to-do">What to do in the first hour</a>
+    </div>
+  </section>
+
+  <section class="wrap" id="cities">
+    <h2>Cities</h2>
+    <div class="city-grid">
+      {
+        featured.map((city) => (
+          <a class="card" href={`/${city.slug}`}>
+            <strong>{city.title}</strong>
+            <span class="muted">{city.county}</span>
+          </a>
+        ))
+      }
+    </div>
+    <p>
+      Also:
+      {
+        cities
+          .filter((city) => !featured.includes(city))
+          .map((city, i, list) => (
+            <>
+              <a href={`/${city.slug}`}>{city.name}</a>
+              {i < list.length - 1 ? ", " : ""}
+            </>
+          ))
+      }
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>Small leak?</h2>
+    <p>
+      If the water is off and it is one wet spot — a fridge line, a sink
+      supply, a washing-machine drip — you can often dry it yourself.
+      <a href="/small-leaks">Do-it-yourself steps</a>. If it is more than that,
+      call or send the form.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <JobSteps />
+  </section>
+
+  <section class="wrap">
+    <WaterKinds />
+  </section>
+
+  <section class="wrap">
+    <InsuranceNotes />
+  </section>
+
+  <section class="wrap">
+    <FaqList />
+    <p><a href="/faq">More questions</a></p>
+  </section>
+
+  <section class="wrap" style="padding-bottom: 5rem;" id="request">
+    <h2>Request help</h2>
+    <LeadForm />
+  </section>
+</Base>

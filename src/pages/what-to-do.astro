@@ -1,0 +1,63 @@
+---
+import Base from "../layouts/Base.astro";
+import WaterKinds from "../components/WaterKinds.astro";
+import InsuranceNotes from "../components/InsuranceNotes.astro";
+---
+
+<Base
+  title="What to do after water damage in Georgia"
+  description="First-hour steps after a burst pipe, leak, or storm water in a Georgia home. Then request a local restoration callback."
+>
+  <article class="hero wrap">
+    <h1>What to do in the first hour</h1>
+    <p class="lede">
+      For a home in Gwinnett or nearby — Dacula, Lawrenceville, Snellville,
+      Buford. Safety first. Then photos. Then a local crew if it is more than
+      a drip.
+    </p>
+  </article>
+
+  <section class="wrap">
+    <h2>Stop more water, if you can do it safely</h2>
+    <ol class="steps">
+      <li>If water is still running and you can reach the shutoff, turn it off. Under the fixture first. House main if you cannot find that valve.</li>
+      <li>If outlets, cords, or the breaker panel are wet, stay back. Do not step in water to flip a breaker with bare feet.</li>
+      <li>Move people and pets out of sewage or a room with a sagging ceiling.</li>
+      <li>Do not run the HVAC if you think ducts or the air handler are wet. That spreads moisture.</li>
+    </ol>
+  </section>
+
+  <section class="wrap">
+    <h2>Then document and move what you can</h2>
+    <ol class="steps">
+      <li>Photograph rooms, baseboards, the source, and serial numbers on ruined appliances before you toss anything.</li>
+      <li>Lift furniture onto blocks or dry boards. Hang wet clothes. Get paper and photos off the floor.</li>
+      <li>Do not cut drywall or pull half a kitchen apart if you plan to file insurance. Let the crew mark what comes out.</li>
+      <li>
+        If it is still more than one wet spot, send a
+        <a href="/#request">request</a> with ZIP and what happened.
+      </li>
+    </ol>
+    <p>
+      Common causes here: burst supply lines, washing-machine hoses, toilet
+      overflows, water heaters, and storm water after a roof or window leak.
+    </p>
+    <p>
+      A small drip with the water already off:
+      <a href="/small-leaks">do-it-yourself cleanup</a>.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <WaterKinds />
+  </section>
+
+  <section class="wrap" style="padding-bottom: 3rem;">
+    <InsuranceNotes />
+    <div class="actions">
+      <a class="btn" href="/#request">Request help</a>
+      <a class="btn secondary" href="/small-leaks">Small leak tips</a>
+      <a class="btn secondary" href="/insurance">Insurance</a>
+    </div>
+  </section>
+</Base>

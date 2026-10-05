@@ -1,0 +1,105 @@
+---
+import Base from "../layouts/Base.astro";
+import LeadForm from "../components/LeadForm.astro";
+import CallLink from "../components/CallLink.astro";
+import JobSteps from "../components/JobSteps.astro";
+import WaterKinds from "../components/WaterKinds.astro";
+import InsuranceNotes from "../components/InsuranceNotes.astro";
+import FaqList from "../components/FaqList.astro";
+import { cities } from "../data/cities";
+
+export function getStaticPaths() {
+  // Cities with their own page file (for example dacula.astro) are skipped here.
+  const custom = new Set(["dacula"]);
+  return cities
+    .filter((city) => !custom.has(city.slug))
+    .map((city) => ({
+      params: { slug: city.slug },
+      props: { city },
+    }));
+}
+
+const { city } = Astro.props;
+const others = cities.filter((item) => item.slug !== city.slug).slice(0, 6);
+---
+
+<Base title={city.title} description={city.description}>
+  <article class="hero wrap">
+    <p class="muted">{city.county}</p>
+    <h1>{city.title}</h1>
+    <p class="lede">{city.description}</p>
+    <div class="actions">
+      <a class="btn" href="#request">Request help in {city.name}</a>
+      <CallLink class="btn secondary" />
+      <a class="btn secondary" href="/what-to-do">First-hour checklist</a>
+    </div>
+  </article>
+
+  <section class="wrap">
+    <h2>Water damage in {city.name}</h2>
+    <p>{city.about}</p>
+    <p class="muted">
+      Nearby streets and areas people mention: {city.neighborhoods.join(", ")}.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>If water is in the house now</h2>
+    <ol class="steps">
+      <li>If it is safe, stop the water and stay off wet electrical areas.</li>
+      <li>Take photos of standing water, floors, and the source if you can see it.</li>
+      <li>Do not wait days to dry. Mold and flooring get worse overnight.</li>
+      <li>Send the form. A local restoration company can talk insurance with you.</li>
+    </ol>
+    <p>
+      A dripping supply line you already shut off:
+      <a href="/small-leaks">small-leak steps</a>. Sewage, a sagging ceiling,
+      or wet outlets in {city.name}: call or send the form.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>What we hear about in {city.name}</h2>
+    <ul>
+      {city.causes.map((cause) => <li>{cause}</li>)}
+    </ul>
+  </section>
+
+  <section class="wrap">
+    <JobSteps city={city.name} />
+  </section>
+
+  <section class="wrap">
+    <WaterKinds city={city.name} />
+  </section>
+
+  <section class="wrap">
+    <InsuranceNotes city={city.name} />
+  </section>
+
+  <section class="wrap">
+    <FaqList city={city.name} />
+  </section>
+
+  <section class="wrap" style="padding-bottom: 2rem;" id="request">
+    <h2>Request help</h2>
+    <p class="lede">
+      Tell us what happened in {city.name}. Someone will call you back.
+    </p>
+    <LeadForm defaultCity={city.slug} />
+  </section>
+
+  <section class="wrap" style="padding-bottom: 2rem;">
+    <h2>Other cities</h2>
+    <p>
+      {
+        others.map((item, i) => (
+          <>
+            <a href={`/${item.slug}`}>{item.name}</a>
+            {i < others.length - 1 ? " · " : ""}
+          </>
+        ))
+      }
+    </p>
+  </section>
+</Base>

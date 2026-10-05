@@ -1,0 +1,57 @@
+---
+type Props = { city?: string };
+const { city } = Astro.props;
+const place = city ?? "Georgia";
+---
+
+<h2>Questions homeowners ask in {place}</h2>
+<dl class="faq">
+  <div>
+    <dt>How fast does someone come?</dt>
+    <dd>
+      That depends on the shop, the hour, and how many storms are hitting
+      Gwinnett the same night. We cannot promise a 60-minute truck. Emergency
+      water is still worth calling now. Drying is cheaper than waiting until
+      morning if the house is still taking water.
+    </dd>
+  </div>
+  <div>
+    <dt>Can I stay in the house?</dt>
+    <dd>
+      Often yes on a clean supply-line leak in one room. No if sewage is out,
+      the ceiling is coming down, or the panel is wet. The crew on site should
+      tell you.
+    </dd>
+  </div>
+  <div>
+    <dt>Do I have to hire the company you send?</dt>
+    <dd>
+      No. Someone will call you. You can get a second opinion before any
+      work starts.
+    </dd>
+  </div>
+  <div>
+    <dt>What if it is only a small drip?</dt>
+    <dd>
+      If the water is off and you can see all of it, start on
+      <a href="/small-leaks">small leaks</a>. If it still smells or feels damp
+      the next day, send the form.
+    </dd>
+  </div>
+  <div>
+    <dt>How long does drying take?</dt>
+    <dd>
+      A one-room clean leak can be a couple of days of fans and a dehumidifier.
+      Wet pad, hardwood, or walls often take longer. A shop should measure
+      moisture, not guess from how it looks.
+    </dd>
+  </div>
+  <div>
+    <dt>Will they work with my insurance?</dt>
+    <dd>
+      Most restoration companies in this area will. We do not file the claim.
+      Photograph first. More on
+      <a href="/insurance">insurance</a>.
+    </dd>
+  </div>
+</dl>

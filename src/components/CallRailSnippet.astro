@@ -1,0 +1,22 @@
+---
+import { getCallRailSwapSrc } from "../lib/callrail";
+
+const src = getCallRailSwapSrc();
+---
+
+{
+  src && (
+    <>
+      <script is:inline>
+        document.addEventListener("submit", function (event) {
+          const form = event.target;
+          if (!(form instanceof HTMLFormElement) || form.id !== "request") return;
+          if (window.CallTrk && typeof window.CallTrk.captureForm === "function") {
+            window.CallTrk.captureForm("#request");
+          }
+        });
+      </script>
+      <script type="text/javascript" src={src}></script>
+    </>
+  )
+}

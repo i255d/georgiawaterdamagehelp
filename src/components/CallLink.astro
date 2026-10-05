@@ -1,0 +1,17 @@
+---
+import { getTrackingPhone } from "../lib/phone";
+
+type Props = {
+  class?: string;
+  prefix?: string;
+};
+
+const phone = getTrackingPhone();
+const { class: className = "", prefix = "Call" } = Astro.props;
+---
+
+{
+  phone && (
+    <a class={className} href={phone.href}>{`${prefix} ${phone.label}`}</a>
+  )
+}

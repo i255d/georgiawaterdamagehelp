@@ -1,0 +1,66 @@
+---
+import { cities } from "../data/cities";
+import CallLink from "./CallLink.astro";
+import { getTrackingPhone } from "../lib/phone";
+
+type Props = {
+  defaultCity?: string;
+};
+
+const { defaultCity = "" } = Astro.props;
+const phone = getTrackingPhone();
+---
+
+<form class="form card" id="request" method="get" action="/thanks">
+  <input type="hidden" name="_subject" value="Water damage help request" />
+  <label>
+    Name
+    <input type="text" name="name" autocomplete="name" required />
+  </label>
+  <label>
+    Phone
+    <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
+  </label>
+  <label>
+    City
+    <select name="city" required>
+      <option value="" disabled selected={!defaultCity}>Choose a city</option>
+      {
+        cities.map((city) => (
+          <option value={city.name} selected={defaultCity === city.slug || defaultCity === city.name}>
+            {city.name}
+          </option>
+        ))
+      }
+    </select>
+  </label>
+  <label>
+    ZIP
+    <input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" required />
+  </label>
+  <label>
+    What happened
+    <select name="what_happened" required>
+      <option value="" disabled selected>Select one</option>
+      <option>Burst pipe or supply line</option>
+      <option>Appliance leak</option>
+      <option>Toilet or drain overflow</option>
+      <option>Storm or roof leak</option>
+      <option>Flood or standing water</option>
+      <option>Sewage</option>
+      <option>Not sure</option>
+    </select>
+  </label>
+  <label>
+    Details
+    <textarea name="details" placeholder="Which rooms? How long has water been there?"></textarea>
+  </label>
+  <button class="btn" type="submit">Send my request</button>
+  {
+    phone && (
+      <p class="muted">
+        Prefer to talk now? <CallLink prefix="Call" />.
+      </p>
+    )
+  }
+</form>

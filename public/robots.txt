@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://georgiawaterdamagehelp.com/sitemap-index.xml

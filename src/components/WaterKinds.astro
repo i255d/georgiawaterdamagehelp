@@ -1,0 +1,37 @@
+---
+type Props = { city?: string };
+const { city } = Astro.props;
+const where = city ? ` in ${city}` : "";
+---
+
+<h2>Three kinds of water{where}</h2>
+<p>
+  Restoration people sort water by how dirty it is. That changes whether you
+  should stay in the room and what a crew will throw out.
+</p>
+<div class="split">
+  <div class="card">
+    <h3>Clean water</h3>
+    <p>
+      A supply line, ice maker, or water heater that has not sat. You can often
+      stay in the house. Fast drying still matters so it does not turn into a
+      dirty job.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Gray water</h3>
+    <p>
+      Washing machine, dishwasher, fridge drip pan, or a toilet bowl overflow
+      without feces. Treat it as unclean. Gloves. Do not use a household vac
+      you will use later on dry carpet.
+    </p>
+  </div>
+</div>
+<div class="card" style="margin-bottom: 1.5rem;">
+  <h3>Sewage and flood from outside</h3>
+  <p>
+    Toilet backup with waste, sewer line, river or street flood. Stay out of
+    it. Kids and pets out. This is not a towel job.     Tell the form it is sewage
+    so the shop sends the right crew.
+  </p>
+</div>

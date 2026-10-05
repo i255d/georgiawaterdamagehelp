@@ -1,0 +1,35 @@
+---
+import Base from "../layouts/Base.astro";
+import FaqList from "../components/FaqList.astro";
+import CallLink from "../components/CallLink.astro";
+---
+
+<Base
+  title="Water damage questions for Georgia homeowners"
+  description="How fast a crew comes, whether you can stay home, insurance, small leaks, and how this request site works."
+>
+  <article class="hero wrap">
+    <h1>Questions we hear from homeowners</h1>
+    <p class="lede">
+      Straight answers for a Gwinnett or nearby house. If you need a crew,
+      call. A restoration company handles the work.
+    </p>
+  </article>
+
+  <section class="wrap">
+    <FaqList />
+  </section>
+
+  <section class="wrap" style="padding-bottom: 3rem;">
+    <h2>Still not sure?</h2>
+    <p>
+      Send the form with the ZIP and what you see. Or call. A local company
+      can tell you if it is a DIY dry-out or a crew job.
+    </p>
+    <div class="actions">
+      <a class="btn" href="/#request">Request help</a>
+      <CallLink class="btn secondary" />
+      <a class="btn secondary" href="/what-to-do">First-hour checklist</a>
+    </div>
+  </section>
+</Base>

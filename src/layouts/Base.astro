@@ -1,0 +1,64 @@
+---
+import "../styles/global.css";
+import CallLink from "../components/CallLink.astro";
+import CallRailSnippet from "../components/CallRailSnippet.astro";
+
+type Props = {
+  title: string;
+  description: string;
+};
+
+const { title, description } = Astro.props;
+const pageTitle = title.includes("Georgia Water Damage Help")
+  ? title
+  : `${title} | Georgia Water Damage Help`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">Georgia Water Damage Help</a>
+        <nav class="nav" aria-label="Main">
+          <a href="/#cities">Cities</a>
+          <a href="/what-to-do">What to do first</a>
+          <a href="/insurance">Insurance</a>
+          <a href="/faq">FAQ</a>
+          <CallLink class="nav-phone" prefix="Call" />
+          <a href="/#request">Get help</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Water damage help for Georgia homeowners. We are not an insurance
+          company. You decide whether to hire the crew that calls you back.
+        </p>
+        <p>
+          <a href="/how-it-works">How it works</a>
+          ·
+          <a href="/faq">FAQ</a>
+          ·
+          <a href="/insurance">Insurance</a>
+          ·
+          <a href="/small-leaks">Small leaks</a>
+          ·
+          <a href="/privacy">Privacy</a>
+        </p>
+      </div>
+    </footer>
+    <CallRailSnippet />
+  </body>
+</html>

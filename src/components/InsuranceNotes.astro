@@ -1,0 +1,24 @@
+---
+type Props = { city?: string };
+const { city } = Astro.props;
+const where = city ? ` in ${city}` : " in Georgia";
+---
+
+<h2>Insurance{where}</h2>
+<p>
+  Sudden pipe bursts and appliance failures are often covered. Slow leaks you
+  ignored, flood from a creek or street, and sewer backup may not be — unless
+  you bought those add-ons. Only your policy answers that. We do not bill
+  insurance. The restoration company can.
+</p>
+<ul>
+  <li>Photograph every room before you throw things away.</li>
+  <li>Keep a list of damaged items. Do not toss a soaked sofa until they say so, if you can stand the smell.</li>
+  <li>Call your carrier when you can. A crew that works insurance jobs will talk to the adjuster.</li>
+  <li>Do not start demo if you plan to file. Cutting drywall “to help” can complicate the claim.</li>
+</ul>
+<p>
+  More on first-hour photos and what to move is on
+  <a href="/what-to-do">what to do first</a> and
+  <a href="/insurance">insurance</a>.
+</p>
