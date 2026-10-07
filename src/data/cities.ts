@@ -28,6 +28,23 @@ export const cities: City[] = [
     ],
   },
   {
+    slug: "hamilton-mill",
+    name: "Hamilton Mill",
+    county: "Gwinnett County",
+    title: "Water damage restoration in Hamilton Mill, GA",
+    description:
+      "Burst pipe, leak, or storm water in Hamilton Mill, off I-85 at Exit 120. Call or send what happened.",
+    neighborhoods: ["Highpointe", "Glenaire", "Lake Forest", "Grove Park"],
+    about:
+      "Hamilton Mill sits off I-85 at Exit 120. Homes started going up in the mid-1990s, so water heaters, roofs, and air conditioners are on their second life. A leak upstairs in a two-story house can come through the ceiling below.",
+    causes: [
+      "Water heaters that fail in garages and closets",
+      "Air conditioner drain lines that overflow into the ceiling",
+      "Washing-machine hoses and ice-maker lines",
+      "Upstairs leaks that reach the rooms below",
+    ],
+  },
+  {
     slug: "lawrenceville",
     name: "Lawrenceville",
     county: "Gwinnett County",
