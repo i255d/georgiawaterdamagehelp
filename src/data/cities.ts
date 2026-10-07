@@ -101,15 +101,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Duluth, GA",
     description:
-      "Duluth water extraction and cleanup requests. We pass your form to a Gwinnett restoration company that works with insurance.",
-    neighborhoods: ["Downtown Duluth", "Pleasant Hill", "Peachtree Industrial"],
+      "Burst pipe, leak, or storm water in Duluth, GA 30096 and 30097. Houses, townhomes, and condos. Call or send what happened.",
+    neighborhoods: ["Town Green", "Pleasant Hill", "Peachtree Industrial", "Sugarloaf Country Club", "Cardinal Lake"],
     about:
-      "Duluth requests often come from downtown, Pleasant Hill, and the streets off Peachtree Industrial. Townhomes and two-story houses hide water in shared walls. If a unit above you leaked, say so on the form — that changes how a crew dries it.",
+      "Duluth has more townhomes, condos, and apartments than most of Gwinnett, so a leak in one unit often ends up in another. The typical house was built around 1992, old enough for water heaters and hoses to be on their second round or past it.",
     causes: [
-      "Leaks from a neighboring townhome or upstairs unit",
-      "Supply lines and ice makers",
-      "Overflowing tubs and toilets",
-      "Storm water at sliders and patio doors",
+      "Leaks from the unit above",
+      "Water heaters that fail in garages and closets",
+      "Washing-machine hoses and refrigerator lines",
+      "Outside water at ground-floor doors in heavy rain",
     ],
   },
   {
