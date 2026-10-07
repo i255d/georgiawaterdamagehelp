@@ -186,15 +186,15 @@ export const cities: City[] = [
     county: "Barrow County",
     title: "Water damage restoration in Winder, GA",
     description:
-      "Winder and Barrow County water cleanup help. Burst pipes, leaks, and storm water — send the form for a local callback.",
-    neighborhoods: ["Downtown Winder", "Atlanta Highway", "Auburn Road"],
+      "Burst pipe, leak, or storm water in Winder, GA 30680, in Barrow County. Call or send what happened.",
+    neighborhoods: ["Downtown Winder", "Fort Yargo edge", "Atlanta Highway", "Hills at Cedar Creek"],
     about:
-      "Winder and Barrow County sit just east of Gwinnett. Downtown Winder, Atlanta Highway, and Auburn Road are the usual ZIPs. The shops we send to will say if they cover you. If they do not, we do not pretend they do.",
+      "Winder is the county seat of Barrow County, not a Gwinnett suburb. Downtown houses are old and often sit over a crawl space. Outside the city, many houses are on a well and septic. The companies that answer will tell you if they can come to your address.",
     causes: [
-      "Burst pipes and well or city-line issues",
-      "Appliance leaks",
-      "Storm and roof leaks",
-      "Water in older crawl spaces",
+      "Water heaters and appliance hoses",
+      "Slow leaks in crawl spaces",
+      "Burst pipes in colder snaps",
+      "Septic backups outside the city",
     ],
   },
   {
