@@ -67,15 +67,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Snellville, GA",
     description:
-      "Snellville water damage, flood cleanup, and leak extraction. Local restoration follow-up, not a national call center.",
-    neighborhoods: ["Scenic Highway", "Grayson Highway", "Lenora Park"],
+      "Burst pipe, leak, or storm water in Snellville, GA 30078 and 30039. Call or send what happened.",
+    neighborhoods: ["The Grove", "Briscoe Park", "Lenora", "Norris Lake"],
     about:
-      "Snellville jobs we see mentioned are along Scenic Highway, Grayson Highway, and the streets near Lenora Park. Split-level and ranch homes hold water in carpet and at the bottom of stairs. A small upstairs leak can drip into a living room before it looks serious.",
+      "Snellville was built mostly in the 1980s and 1990s, so many homes are 30 to 45 years old. Water heaters, supply lines, and washer hoses wear out, and a crawl space can hold a leak for a long time before it shows.",
     causes: [
-      "Upstairs bathrooms dripping into first-floor ceilings",
-      "Carpet and pad that stay wet in ranches",
-      "Appliance leaks in laundry closets",
-      "Storm water at the slab edge after a downpour",
+      "Water heaters that fail in garages and closets",
+      "Washing-machine hoses and refrigerator lines",
+      "Slow leaks in crawl spaces",
+      "Storm water and roof leaks after a hard rain",
     ],
   },
   {
