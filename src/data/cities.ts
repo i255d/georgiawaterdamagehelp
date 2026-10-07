@@ -152,15 +152,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Grayson, GA",
     description:
-      "Grayson water damage, water cleanup, and leak extraction. Local Gwinnett follow-up after you send the form.",
-    neighborhoods: ["Grayson Highway", "Pharrs Road", "Tribble Mill"],
+      "Burst pipe, leak, or storm water in Grayson, GA 30017. Call or send what happened.",
+    neighborhoods: ["Uptown and the Railyard", "Wheatfields", "Great River at Tribble Mill", "Pharrs Road"],
     about:
-      "Grayson is small, so a leak is usually in a house near Grayson Highway, Pharrs Road, or toward Tribble Mill. Same jobs as the rest of south Gwinnett: a hose, a toilet, a water heater, or rain that found a weak window.",
+      "Most people who say they live in Grayson are in unincorporated Gwinnett, along Highway 20, Rosebud Road, and Pharrs Road. The big subdivisions are from the 2000s, so water heaters and hoses are getting old.",
     causes: [
-      "Toilet and supply-line leaks",
-      "Water heaters",
-      "Storm leaks",
-      "Wet carpet that was never pulled after a prior leak",
+      "Water heaters that fail in garages and closets",
+      "Washing-machine hoses and refrigerator lines",
+      "Frozen outdoor faucets and irrigation lines",
+      "Storm water and roof leaks",
     ],
   },
   {
