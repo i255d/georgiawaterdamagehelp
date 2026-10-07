@@ -169,15 +169,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Lilburn, GA",
     description:
-      "Lilburn water damage restoration for flooded rooms, burst pipes, and storms. We send exclusive requests to a local crew.",
-    neighborhoods: ["Lawrenceville Highway", "Killian Hill", "Rivermist"],
+      "Burst pipe, leak, basement water, or storm water in Lilburn, GA 30047 and 30048. Call or send what happened.",
+    neighborhoods: ["Downtown Lilburn", "Rivermist", "Mountain Park", "Killian Hill"],
     about:
-      "Lilburn has a lot of 1970s–1990s houses along Lawrenceville Highway, Killian Hill, and Rivermist. Older plumbing and water heaters fail. If the house has a finished basement, water can sit in carpet and at the base of walls overnight.",
+      "Lilburn has some of the oldest houses in this part of Gwinnett. The typical house was built around 1982, and the river neighborhoods have full basements. Gray plastic pipe is more plausible here than in newer cities, so ask a plumber.",
     causes: [
-      "Older water heaters and supply lines",
-      "Finished-basement flooding",
-      "Washing-machine leaks",
-      "Roof and chimney leaks in storms",
+      "Water heaters and old supply lines that wear out",
+      "Basement water from upstairs leaks or outside",
+      "Septic backups on river lots",
+      "Water under vinyl plank in newer slab houses",
     ],
   },
   {
