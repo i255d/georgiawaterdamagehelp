@@ -118,15 +118,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Suwanee, GA",
     description:
-      "Suwanee water damage restoration help for leaks, floods, and storm water. One form, a local company follows up.",
-    neighborhoods: ["Town Center", "Suwanee Dam", "Old Town"],
+      "Burst pipe, leak, or creek water in Suwanee, GA 30024. Call or send what happened.",
+    neighborhoods: ["Town Center", "Old Town", "Morningview", "Laurel Springs", "The River Club"],
     about:
-      "Suwanee has a lot of 1990s–2010s houses around Town Center, Suwanee Dam, and Old Town. Water heaters and washing-machine hoses are the usual source. Crawl spaces stay wet after a leak if nobody looks under the house the same day.",
+      "The railroad tracks split Suwanee into Town Center and Old Town. Most houses outside Old Town were built from the mid-1990s on, so water heaters and hoses are wearing out. Old Town has many septic systems, and Suwanee Creek floods the greenway in heavy rain.",
     causes: [
-      "Water heaters at the end of their life",
-      "Washing-machine and dishwasher hoses",
-      "Crawl-space moisture after a leak",
-      "Roof leaks after wind and rain",
+      "Water heaters that fail in garages and closets",
+      "Washing-machine hoses and refrigerator lines",
+      "Creek water near the greenway",
+      "Septic backups in Old Town",
     ],
   },
   {
