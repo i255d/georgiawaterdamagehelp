@@ -135,15 +135,15 @@ export const cities: City[] = [
     county: "Gwinnett / Walton",
     title: "Water damage restoration in Loganville, GA",
     description:
-      "Loganville burst pipes, basement water, and storm cleanup. Request help and a nearby restoration company can call you.",
-    neighborhoods: ["Highway 78", "Rosebud", "Grayson border"],
+      "Burst pipe, leak, basement water, or storm water in Loganville, GA 30052. Call or send what happened.",
+    neighborhoods: ["Highway 78", "Rosebud", "Bay Creek", "Youth"],
     about:
-      "Loganville sits on the Gwinnett–Walton line. Highway 78, Rosebud, and the Grayson border all come through. Basement and terrace-level water shows up more here than in a slab-only subdivision. If the water is coming from the yard or a sump, say that on the form.",
+      "Loganville has one ZIP code and two counties, Gwinnett and Walton. Many houses have a basement or terrace level, where water from outside collects and a leak upstairs can end up.",
     causes: [
-      "Terrace-level and basement seepage",
+      "Basement and terrace-level water",
+      "Water heaters and appliance hoses",
       "Burst pipes in colder snaps",
-      "Appliance leaks",
-      "Yard runoff after a long rain",
+      "Storm and lightning damage",
     ],
   },
   {
