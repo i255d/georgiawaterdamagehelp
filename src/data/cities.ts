@@ -84,15 +84,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Buford, GA",
     description:
-      "Buford and Lake Lanier-area water damage help. Burst pipes, appliance leaks, and storm water — request a local restoration callback.",
-    neighborhoods: ["Mall of Georgia", "Friendship Road", "Lake Lanier"],
+      "Burst pipe, leak, septic backup, or storm water in Buford, GA 30518 and 30519. Call or send what happened.",
+    neighborhoods: ["Mall of Georgia", "Friendship Road", "Old Buford", "Lake Lanier"],
     about:
-      "Buford sits close to Lake Lanier, so summer humidity keeps wet rooms from drying on their own. Homes near the Mall of Georgia and Friendship Road get the same burst-pipe and appliance jobs as the rest of Gwinnett, plus storm water when a roof or window lets rain in.",
+      "Buford is the mall side and the lake side. Houses near Mall of Georgia are 15 to 30 years old, so water heaters and hoses fail. Many lakefront lots are on septic, so a backup is a different first call.",
     causes: [
-      "Humidity that keeps a “small” leak wet for days",
-      "Appliance and water-heater failures",
-      "Storm and roof leaks",
-      "Finished basements or lower levels that take runoff",
+      "Water heaters that fail in garages and closets",
+      "Washing-machine hoses and refrigerator lines",
+      "Septic backups on lake lots",
+      "Leaks through a townhome shared wall",
     ],
   },
   {
@@ -135,15 +135,15 @@ export const cities: City[] = [
     county: "Gwinnett / Walton",
     title: "Water damage restoration in Loganville, GA",
     description:
-      "Loganville burst pipes, basement water, and storm cleanup. Request help and a nearby restoration company can call you.",
-    neighborhoods: ["Highway 78", "Rosebud", "Grayson border"],
+      "Burst pipe, leak, basement water, or storm water in Loganville, GA 30052. Call or send what happened.",
+    neighborhoods: ["Highway 78", "Rosebud", "Bay Creek", "Youth"],
     about:
-      "Loganville sits on the Gwinnett–Walton line. Highway 78, Rosebud, and the Grayson border all come through. Basement and terrace-level water shows up more here than in a slab-only subdivision. If the water is coming from the yard or a sump, say that on the form.",
+      "Loganville has one ZIP code and two counties, Gwinnett and Walton. Many houses have a basement or terrace level, where water from outside collects and a leak upstairs can end up.",
     causes: [
-      "Terrace-level and basement seepage",
+      "Basement and terrace-level water",
+      "Water heaters and appliance hoses",
       "Burst pipes in colder snaps",
-      "Appliance leaks",
-      "Yard runoff after a long rain",
+      "Storm and lightning damage",
     ],
   },
   {
@@ -169,15 +169,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Lilburn, GA",
     description:
-      "Lilburn water damage restoration for flooded rooms, burst pipes, and storms. We send exclusive requests to a local crew.",
-    neighborhoods: ["Lawrenceville Highway", "Killian Hill", "Rivermist"],
+      "Burst pipe, leak, basement water, or storm water in Lilburn, GA 30047 and 30048. Call or send what happened.",
+    neighborhoods: ["Downtown Lilburn", "Rivermist", "Mountain Park", "Killian Hill"],
     about:
-      "Lilburn has a lot of 1970s–1990s houses along Lawrenceville Highway, Killian Hill, and Rivermist. Older plumbing and water heaters fail. If the house has a finished basement, water can sit in carpet and at the base of walls overnight.",
+      "Lilburn has some of the oldest houses in this part of Gwinnett. The typical house was built around 1982, and the river neighborhoods have full basements. Gray plastic pipe is more plausible here than in newer cities, so ask a plumber.",
     causes: [
-      "Older water heaters and supply lines",
-      "Finished-basement flooding",
-      "Washing-machine leaks",
-      "Roof and chimney leaks in storms",
+      "Water heaters and old supply lines that wear out",
+      "Basement water from upstairs leaks or outside",
+      "Septic backups on river lots",
+      "Water under vinyl plank in newer slab houses",
     ],
   },
   {
@@ -186,15 +186,15 @@ export const cities: City[] = [
     county: "Barrow County",
     title: "Water damage restoration in Winder, GA",
     description:
-      "Winder and Barrow County water cleanup help. Burst pipes, leaks, and storm water — send the form for a local callback.",
-    neighborhoods: ["Downtown Winder", "Atlanta Highway", "Auburn Road"],
+      "Burst pipe, leak, or storm water in Winder, GA 30680, in Barrow County. Call or send what happened.",
+    neighborhoods: ["Downtown Winder", "Fort Yargo edge", "Atlanta Highway", "Hills at Cedar Creek"],
     about:
-      "Winder and Barrow County sit just east of Gwinnett. Downtown Winder, Atlanta Highway, and Auburn Road are the usual ZIPs. The shops we send to will say if they cover you. If they do not, we do not pretend they do.",
+      "Winder is the county seat of Barrow County, not a Gwinnett suburb. Downtown houses are old and often sit over a crawl space. Outside the city, many houses are on a well and septic. The companies that answer will tell you if they can come to your address.",
     causes: [
-      "Burst pipes and well or city-line issues",
-      "Appliance leaks",
-      "Storm and roof leaks",
-      "Water in older crawl spaces",
+      "Water heaters and appliance hoses",
+      "Slow leaks in crawl spaces",
+      "Burst pipes in colder snaps",
+      "Septic backups outside the city",
     ],
   },
   {
@@ -203,10 +203,10 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Gwinnett County, GA",
     description:
-      "Gwinnett-wide water damage help — Dacula, Lawrenceville, Snellville, Buford, and nearby cities. One form for a local restoration callback.",
-    neighborhoods: ["Dacula", "Lawrenceville", "Snellville", "Buford", "Duluth", "Suwanee"],
+      "Gwinnett-wide water damage help — Dacula, Hamilton Mill, Lawrenceville, Snellville, Buford, Duluth, Suwanee, and nearby cities. One form for a local restoration callback.",
+    neighborhoods: ["Dacula", "Hamilton Mill", "Lawrenceville", "Snellville", "Buford", "Duluth", "Suwanee", "Grayson", "Lilburn", "Loganville"],
     about:
-      "Gwinnett is the first county this site is built for. Dacula, Lawrenceville, Snellville, Buford, Duluth, and Suwanee are the core. If your city is not listed, send the ZIP anyway. A local shop will tell you if they can come.",
+      "Gwinnett is the first county this site is built for. Dacula, Hamilton Mill, Lawrenceville, Snellville, Buford, Duluth, Suwanee, Grayson, Lilburn, and Loganville are the core. If your city is not listed, send the ZIP anyway. A local shop will tell you if they can come.",
     causes: [
       "Burst pipes and failed water heaters",
       "Appliance and ice-maker leaks",
