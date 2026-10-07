@@ -203,10 +203,10 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Gwinnett County, GA",
     description:
-      "Gwinnett-wide water damage help — Dacula, Lawrenceville, Snellville, Buford, and nearby cities. One form for a local restoration callback.",
-    neighborhoods: ["Dacula", "Lawrenceville", "Snellville", "Buford", "Duluth", "Suwanee"],
+      "Gwinnett-wide water damage help — Dacula, Hamilton Mill, Lawrenceville, Snellville, Buford, Duluth, Suwanee, and nearby cities. One form for a local restoration callback.",
+    neighborhoods: ["Dacula", "Hamilton Mill", "Lawrenceville", "Snellville", "Buford", "Duluth", "Suwanee", "Grayson", "Lilburn", "Loganville"],
     about:
-      "Gwinnett is the first county this site is built for. Dacula, Lawrenceville, Snellville, Buford, Duluth, and Suwanee are the core. If your city is not listed, send the ZIP anyway. A local shop will tell you if they can come.",
+      "Gwinnett is the first county this site is built for. Dacula, Hamilton Mill, Lawrenceville, Snellville, Buford, Duluth, Suwanee, Grayson, Lilburn, and Loganville are the core. If your city is not listed, send the ZIP anyway. A local shop will tell you if they can come.",
     causes: [
       "Burst pipes and failed water heaters",
       "Appliance and ice-maker leaks",

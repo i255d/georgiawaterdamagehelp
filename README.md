@@ -24,7 +24,8 @@ Open `http://localhost:4321/`.
 ## Pages
 
 - `/` home + request form
-- `/dacula`, `/lawrenceville`, and 10 other city pages
+- `/dacula`, `/hamilton-mill`, `/lawrenceville`, `/snellville`, `/buford`, `/duluth`, `/suwanee`, `/grayson`, `/lilburn`, `/loganville`, `/winder`: custom city pages (one `.astro` file each, listed in the `custom` set in `src/pages/[slug].astro`)
+- `/gwinnett-county`, `/atlanta`: shared city template (`src/pages/[slug].astro`)
 - `/what-to-do` first-hour checklist
 - `/how-it-works` disclosure
 - `/privacy`
