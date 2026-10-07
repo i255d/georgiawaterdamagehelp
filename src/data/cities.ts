@@ -84,15 +84,15 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Buford, GA",
     description:
-      "Buford and Lake Lanier-area water damage help. Burst pipes, appliance leaks, and storm water — request a local restoration callback.",
-    neighborhoods: ["Mall of Georgia", "Friendship Road", "Lake Lanier"],
+      "Burst pipe, leak, septic backup, or storm water in Buford, GA 30518 and 30519. Call or send what happened.",
+    neighborhoods: ["Mall of Georgia", "Friendship Road", "Old Buford", "Lake Lanier"],
     about:
-      "Buford sits close to Lake Lanier, so summer humidity keeps wet rooms from drying on their own. Homes near the Mall of Georgia and Friendship Road get the same burst-pipe and appliance jobs as the rest of Gwinnett, plus storm water when a roof or window lets rain in.",
+      "Buford is the mall side and the lake side. Houses near Mall of Georgia are 15 to 30 years old, so water heaters and hoses fail. Many lakefront lots are on septic, so a backup is a different first call.",
     causes: [
-      "Humidity that keeps a “small” leak wet for days",
-      "Appliance and water-heater failures",
-      "Storm and roof leaks",
-      "Finished basements or lower levels that take runoff",
+      "Water heaters that fail in garages and closets",
+      "Washing-machine hoses and refrigerator lines",
+      "Septic backups on lake lots",
+      "Leaks through a townhome shared wall",
     ],
   },
   {

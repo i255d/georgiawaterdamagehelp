@@ -10,7 +10,7 @@ import { cities } from "../data/cities";
 
 export function getStaticPaths() {
   // Cities with their own page file (for example dacula.astro) are skipped here.
-  const custom = new Set(["dacula", "hamilton-mill", "lawrenceville", "snellville", "duluth", "suwanee", "grayson"]);
+  const custom = new Set(["dacula", "hamilton-mill", "lawrenceville", "snellville", "duluth", "suwanee", "grayson", "buford"]);
   return cities
     .filter((city) => !custom.has(city.slug))
     .map((city) => ({
