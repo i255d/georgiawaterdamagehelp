@@ -50,14 +50,14 @@ export const cities: City[] = [
     county: "Gwinnett County",
     title: "Water damage restoration in Lawrenceville, GA",
     description:
-      "Water cleanup and restoration help for Lawrenceville homes. Burst pipe, flood, or storm water — send the details and a local crew can follow up.",
+      "Burst pipe, leak, or storm water in Lawrenceville, GA 30043, 30044, 30045, 30046. Call or send what happened.",
     neighborhoods: ["Downtown Lawrenceville", "Collins Hill", "Sugarloaf", "Old Norcross"],
     about:
-      "Lawrenceville mixes older downtown houses with newer streets around Collins Hill and Sugarloaf. Older supply lines and water heaters fail. In the newer builds it is often a fridge line, a toilet supply, or water that ran under vinyl plank before anyone saw it.",
+      "Lawrenceville is the county seat. Many homes were built in the late 1980s and 1990s, so water heaters, supply lines, and washer hoses are wearing out. Wolf Creek and Pew Creek make the south and west sides more likely to see outside water.",
     causes: [
-      "Burst pipes and tired water heaters in older homes",
-      "Appliance leaks that soak vinyl plank and pad",
-      "Toilet and drain overflows on second floors",
+      "Water heaters that fail in garages and closets",
+      "Washing-machine hoses and refrigerator lines",
+      "Creek water in south and west Lawrenceville",
       "Roof and window leaks after a fast storm",
     ],
   },
