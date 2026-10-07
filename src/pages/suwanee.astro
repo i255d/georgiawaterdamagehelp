@@ -1,0 +1,258 @@
+---
+import Base from "../layouts/Base.astro";
+import LeadForm from "../components/LeadForm.astro";
+import CallLink from "../components/CallLink.astro";
+
+const title = "Water damage restoration in Suwanee, GA";
+const description =
+  "Burst pipe, leak, or creek water in Suwanee, GA 30024. Call or send what happened.";
+---
+
+<Base title={title} description={description}>
+  <article class="hero wrap">
+    <p class="muted">Gwinnett County</p>
+    <h1>{title}</h1>
+    <p class="lede">
+      Water where it doesn't belong? We're here to help. Call or click "Request
+      help in Suwanee" now and fill out the form. Share as much as you can about
+      the problem and we will get back to you as soon as we can.
+    </p>
+    <div class="actions">
+      <a class="btn" href="#request">Request help in Suwanee</a>
+      <CallLink class="btn secondary" />
+      <a class="btn secondary" href="/what-to-do">First-hour checklist</a>
+    </div>
+  </article>
+
+  <section class="wrap">
+    <h2>Water damage in Suwanee</h2>
+    <p>
+      The railroad tracks split Suwanee in two. On one side is Town Center, with
+      the park, the fountain, the amphitheater, and City Hall. On the other is
+      Old Town, with Main Street and the red caboose. Freight trains run through
+      both, and people here navigate by which side of the tracks they are on.
+    </p>
+    <p>
+      Most of the houses outside Old Town were built from the mid-1990s on.
+      Morningview was built around 1996 to 2000. Town Center and Shadowbrook came
+      in the mid-2000s. So many homes are 20 to 30 years old. That is the age
+      when the water heater, the washer hose, and the refrigerator line start to
+      fail. The usual call is a leak, not a flood.
+    </p>
+    <p>
+      Old Town is different. It has older houses on small lots. Many are still on
+      septic, not sewer. The city says there is an easy way to tell. Look at your
+      Gwinnett County water bill. If you pay nothing for sewer, you are probably
+      on septic.
+    </p>
+    <p>
+      What is under the house matters. Many houses in Morningview have basements,
+      and some are daylight basements. Older houses in Old Town more often sit
+      over a crawl space. On a slab, water spreads across the floor. Tell us what
+      you have, and if you are not sure, say so.
+    </p>
+    <p>
+      Suwanee also has a creek. During Hurricane Helene in 2024, Suwanee Creek
+      Park, Martin Farm Park, George Pierce Park, the greenway, and the
+      playground behind Suwanee Elementary all flooded. If you live near the
+      creek, that is not just a park problem.
+    </p>
+    <p>
+      That is why the first questions are about your house. When you call or send
+      the form, tell us where the water came from, which rooms are wet, and how
+      long it has been there. If you are on septic, say so.
+    </p>
+    <p>
+      Storms do some damage. In a January 2022 storm, trees came down in Suwanee.
+      A damaged roof can leak into the attic for days before the stain shows up
+      on the ceiling.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>Where people say they live</h2>
+    <p>
+      Suwanee has one ZIP code, 30024. Some addresses with a Suwanee mailing
+      address are actually in Forsyth County, not Suwanee.
+    </p>
+    <p>
+      <strong>Town Center and Shadowbrook.</strong> Mid-2000s houses and
+      three-level townhomes. People walk to the park, and the lots are small.
+    </p>
+    <p>
+      <strong>Old Town.</strong> Older and historic houses on small lots. Many are
+      on septic.
+    </p>
+    <p>
+      <strong>Morningview.</strong> Brick houses from about 1996 to 2000. Many
+      have basements.
+    </p>
+    <p>
+      <strong>Laurel Springs.</strong> A gated golf neighborhood from the 1990s.
+    </p>
+    <p>
+      <strong>Grand Cascades and Olde Atlanta Club.</strong> Larger houses from
+      the late 1990s and 2000s.
+    </p>
+    <p>
+      <strong>The River Club.</strong> Custom homes from the 2000s, on the
+      Chattahoochee.
+    </p>
+    <p>
+      <strong>Suwanee Station and Rivermoore Park.</strong> Houses from the 2000s,
+      close to I-85.
+    </p>
+    <p>
+      <strong>Maple Ridge.</strong> Ranch and two-story houses from the 1980s.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>Common causes in Suwanee</h2>
+    <ul>
+      <li>
+        <strong>Water heater.</strong> The tank leaks or lets go in a garage or closet.
+        This is common in houses from the late 1990s and 2000s.
+      </li>
+      <li>
+        <strong>Refrigerator or washer line.</strong> The hose cracks. Water slides
+        under the floor, and you smell it before you see it.
+      </li>
+      <li>
+        <strong>Creek water.</strong> After heavy rain, the creek can rise into
+        yards and low parts of the house near the greenway.
+      </li>
+      <li>
+        <strong>Septic backup.</strong> In Old Town, wastewater can back up into a
+        tub or floor drain. This is sewage.
+      </li>
+      <li>
+        <strong>Burst pipe.</strong> After a hard freeze, a pipe can split in a wall
+        or an attic. Gwinnett had a lot of these in December 2022.
+      </li>
+      <li>
+        <strong>Storm damage.</strong> Rain gets in through a window, a door, or a
+        roof damaged by wind or a falling tree.
+      </li>
+      <li>
+        <strong>Sewage, a sagging ceiling, or wet outlets.</strong> Do not clean these
+        up yourself. Call.
+      </li>
+    </ul>
+  </section>
+
+  <section class="wrap">
+    <h2>If water is in the house now</h2>
+    <ol class="steps">
+      <li>Shut the water off, if you can do it safely. Stay away from wet outlets.</li>
+      <li>Take photos of the water, the room, and where it started.</li>
+      <li>
+        Sewage, a sagging ceiling, or wet outlets: <CallLink prefix="call" /> or
+        <a href="#request">send the form</a>.
+      </li>
+      <li>
+        Already stopped a small drip? Use the
+        <a href="/small-leaks">small-leak steps</a>.
+      </li>
+    </ol>
+    <p>
+      Call your insurance company when you can. If you plan to file a claim, do
+      not start cutting out drywall first.
+    </p>
+    <p>
+      Do not wait until tomorrow to dry things out. Wet drywall and flooring get
+      worse overnight, and mold can start in 24 to 48 hours.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>Questions from Suwanee homeowners</h2>
+    <dl class="faq">
+      <div>
+        <dt>How do I know if my house is on septic or sewer?</dt>
+        <dd>
+          Look at your Gwinnett County water bill. If it has no sewer charge, the
+          house is probably on septic. This matters when you call, because a
+          septic backup is a different problem from a sewer backup. Tell us which
+          you have, or tell us you are not sure.
+        </dd>
+      </div>
+      <div>
+        <dt>Is there a way to tell if the creek is going to reach my house?</dt>
+        <dd>
+          Suwanee Creek has a gauge, and the National Weather Service posts
+          forecasts for it. Flood stage is 8 feet. At 11 feet, the greenway has 1
+          to 3 feet of water on it, and some yards along the creek take water.
+          Check the gauge when heavy rain is coming, and move anything valuable up
+          off the floor. We cannot tell you about your own house. Ask your insurer
+          about outside water coverage before the storm, not after.
+        </dd>
+      </div>
+      <div>
+        <dt>
+          My address says Suwanee but I think I am in Forsyth County. Does that
+          matter?
+        </dt>
+        <dd>
+          It might. Some addresses with a Suwanee mailing address are in Forsyth
+          County, not Gwinnett. When you call or send the form, give your street
+          and ZIP, and say if you think you are in Forsyth. That way the right
+          company can answer.
+        </dd>
+      </div>
+      <div>
+        <dt>I live in a gated neighborhood. How does a crew get in?</dt>
+        <dd>
+          Tell us the gate code or the guard house name when you call, or put it
+          in the form. If the gate needs a name on the list, put the name on the
+          list before the crew comes. If you are not home, ask a neighbor to meet
+          them.
+        </dd>
+      </div>
+    </dl>
+    <p>
+      Questions about drying time, insurance, or whether you have to hire the
+      company that calls are answered on <a href="/faq">FAQ</a> and
+      <a href="/insurance">Insurance</a>.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <p>
+      <strong>What a job looks like.</strong> A crew checks the house, pulls out
+      standing water, dries the structure, and replaces what can't be saved. You
+      should be shown moisture readings, not just told it looks dry. How long it
+      takes depends on the job. <a href="/how-it-works">How it works</a>.
+    </p>
+    <p>
+      <strong>Clean water, dirty water, sewage.</strong> A broken supply line is
+      not the same as a washer overflow or a sewer or septic backup. Say which one
+      it is on the form.
+    </p>
+    <p>
+      <strong>Insurance.</strong> A sudden burst pipe or a failed appliance is often
+      covered. A slow leak, outside water, or sewage may not be unless you bought extra
+      coverage. Take photos first. Don't tear out drywall to "help." Ask your insurer.
+      <a href="/insurance">Insurance</a>.
+    </p>
+  </section>
+
+  <section class="wrap" style="padding-bottom: 2rem;" id="request">
+    <h2>Request help</h2>
+    <p class="lede">
+      Name, phone, city, ZIP, and what happened. Someone will call you back.
+    </p>
+    <LeadForm defaultCity="suwanee" />
+  </section>
+
+  <section class="wrap" style="padding-bottom: 2rem;">
+    <h2>Nearby</h2>
+    <p>
+      <a href="/buford">Buford</a> ·
+      <a href="/duluth">Duluth</a> ·
+      <a href="/hamilton-mill">Hamilton Mill</a> ·
+      <a href="/lawrenceville">Lawrenceville</a> ·
+      <a href="/gwinnett-county">Gwinnett County</a>
+    </p>
+  </section>
+</Base>
