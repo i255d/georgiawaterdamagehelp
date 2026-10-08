@@ -13,6 +13,8 @@ const { title, description, noindex = false } = Astro.props;
 const pageTitle = title.includes("Georgia Water Damage Help")
   ? title
   : `${title} | Georgia Water Damage Help`;
+// Always the https, non-www, trailing-slash URL (same form the sitemap uses).
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!doctype html>
@@ -21,6 +23,7 @@ const pageTitle = title.includes("Georgia Water Damage Help")
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
     {noindex && <meta name="robots" content="noindex" />}
     <title>{pageTitle}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
